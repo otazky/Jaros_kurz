@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="styly.css">
+    <script type="text/javascript" src="main.js"></script>
+    <!-- "module" -->
+</head>
+<body>
+
+<p>
+    <br>
+    <br>
+</p>
+ <!-- Here a loader is created which
+             loads till response comes-->
+        <div class="d-flex justify-content-center">
+            <div class="spinner-border text-primary"
+                 role="status" id="loading">
+                <span class="sr-only"></span>
+            </div>
+        </div>
+
+<p>
+    <br>
+    <br>
+</p>
+
+<h1>Obce v Plzeňském kraji</h1>
+
+ <details class="content">
+  <summary>Načti mi seznam měst</summary>
+  <p>
+      <div class="content">
+       <!-- TABLE CONSTRUCTION-->
+        <table id="list">
+            <!-- HEADING FORMATION -->
+            <tr>
+                <th>Název obce</th>
+                <th>Datová schránka</th>
+            </tr>
+        </table>
+
+  </p>
+      <button type="button" class="btn btn-primary" onclick="saveListToFile();">Uložit seznam</button>
+
+   <hr>
+<nav aria-label="Page navigation example" class="content">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Předcházející</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Další</a></li>
+  </ul>
+</nav>
+
+</details>
+
+
+</div>
+
+</body>
+</html>
